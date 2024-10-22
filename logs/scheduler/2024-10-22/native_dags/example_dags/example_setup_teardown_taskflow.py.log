@@ -5,3 +5,10 @@
 [2024-10-22T07:23:08.704+0700] {logging_mixin.py:190} INFO - [2024-10-22T07:23:08.703+0700] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-22T07:23:08.718+0700] {logging_mixin.py:190} INFO - [2024-10-22T07:23:08.718+0700] {dag.py:4180} INFO - Setting next_dagrun for example_setup_teardown_taskflow to None, run_after=None
 [2024-10-22T07:23:08.741+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py took 0.293 seconds
+[2024-10-22T09:09:21.318+0700] {processor.py:186} INFO - Started process (PID=14462) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2024-10-22T09:09:21.322+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py for tasks to queue
+[2024-10-22T09:09:21.324+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:09:21.324+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2024-10-22T09:09:21.378+0700] {processor.py:925} INFO - DAG(s) 'example_setup_teardown_taskflow' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py
+[2024-10-22T09:09:21.587+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:09:21.587+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:09:21.603+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:09:21.603+0700] {dag.py:4180} INFO - Setting next_dagrun for example_setup_teardown_taskflow to None, run_after=None
+[2024-10-22T09:09:21.628+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_setup_teardown_taskflow.py took 0.319 seconds
