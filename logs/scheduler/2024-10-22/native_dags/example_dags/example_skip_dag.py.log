@@ -12,3 +12,10 @@
 [2024-10-22T09:09:09.959+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:09:09.958+0700] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-22T09:09:09.984+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:09:09.984+0700] {dag.py:4180} INFO - Setting next_dagrun for example_skip_dag to 2024-10-21 00:00:00+00:00, run_after=2024-10-22 00:00:00+00:00
 [2024-10-22T09:09:10.008+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py took 0.292 seconds
+[2024-10-22T09:12:38.903+0700] {processor.py:186} INFO - Started process (PID=15207) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py
+[2024-10-22T09:12:38.906+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py for tasks to queue
+[2024-10-22T09:12:38.907+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:38.907+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py
+[2024-10-22T09:12:38.917+0700] {processor.py:925} INFO - DAG(s) 'example_skip_dag' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py
+[2024-10-22T09:12:39.101+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:39.100+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:12:39.122+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:39.122+0700] {dag.py:4180} INFO - Setting next_dagrun for example_skip_dag to 2024-10-21 00:00:00+00:00, run_after=2024-10-22 00:00:00+00:00
+[2024-10-22T09:12:39.144+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_skip_dag.py took 0.248 seconds
