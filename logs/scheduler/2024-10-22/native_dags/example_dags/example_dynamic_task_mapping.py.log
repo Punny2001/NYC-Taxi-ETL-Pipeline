@@ -1,0 +1,7 @@
+[2024-10-22T09:07:16.442+0700] {processor.py:186} INFO - Started process (PID=14195) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-10-22T09:07:16.445+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py for tasks to queue
+[2024-10-22T09:07:16.446+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:07:16.446+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-10-22T09:07:16.491+0700] {processor.py:925} INFO - DAG(s) 'example_dynamic_task_mapping' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py
+[2024-10-22T09:07:16.675+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:07:16.674+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:07:16.689+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:07:16.689+0700] {dag.py:4180} INFO - Setting next_dagrun for example_dynamic_task_mapping to None, run_after=None
+[2024-10-22T09:07:16.712+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dynamic_task_mapping.py took 0.279 seconds

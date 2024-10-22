@@ -1,0 +1,5 @@
+[2024-10-22T09:07:44.759+0700] {processor.py:186} INFO - Started process (PID=14238) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-10-22T09:07:44.763+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py for tasks to queue
+[2024-10-22T09:07:44.765+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:07:44.765+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-10-22T09:07:44.770+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py
+[2024-10-22T09:07:45.019+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/subdags/subdag.py took 0.277 seconds

@@ -1,0 +1,14 @@
+[2024-10-22T07:22:09.507+0700] {processor.py:186} INFO - Started process (PID=13896) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2024-10-22T07:22:09.511+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-10-22T07:22:09.512+0700] {logging_mixin.py:190} INFO - [2024-10-22T07:22:09.512+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2024-10-22T07:22:09.533+0700] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2024-10-22T07:22:09.813+0700] {logging_mixin.py:190} INFO - [2024-10-22T07:22:09.813+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T07:22:09.856+0700] {logging_mixin.py:190} INFO - [2024-10-22T07:22:09.855+0700] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2024-10-21 00:00:00+00:00, run_after=2024-10-22 00:00:00+00:00
+[2024-10-22T07:22:09.893+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.396 seconds
+[2024-10-22T09:08:26.386+0700] {processor.py:186} INFO - Started process (PID=14404) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2024-10-22T09:08:26.389+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py for tasks to queue
+[2024-10-22T09:08:26.390+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:26.390+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2024-10-22T09:08:26.400+0700] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py
+[2024-10-22T09:08:26.588+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:26.588+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:08:26.616+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:26.616+0700] {dag.py:4180} INFO - Setting next_dagrun for tutorial to 2024-10-21 00:00:00+00:00, run_after=2024-10-22 00:00:00+00:00
+[2024-10-22T09:08:26.636+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/tutorial.py took 0.260 seconds

@@ -1,0 +1,484 @@
+[2024-10-21T20:32:26.333+0700] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-21T20:32:26.334+0700] {logging_mixin.py:190} INFO - Sending to executor.
+[2024-10-21T20:32:26.342+0700] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T20:32:26.344+0700] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T20:32:30.346+0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-21T20:32:30.363+0700] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [up_for_retry]>
+[2024-10-21T20:32:30.371+0700] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [up_for_retry]>
+[2024-10-21T20:32:30.371+0700] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-21T20:32:30.388+0700] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): test_task> on 2024-10-20 00:00:00+00:00
+[2024-10-21T20:32:30.396+0700] {standard_task_runner.py:72} INFO - Started process 3675 to run task
+[2024-10-21T20:32:30.405+0700] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--job-id', '5', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/var/folders/3z/w6kw66r93jxd4b5xvgpxfbkm0000gn/T/tmp4yvf6nvm']
+[2024-10-21T20:32:30.407+0700] {standard_task_runner.py:105} INFO - Job 5: Subtask test_task
+[2024-10-21T20:32:30.488+0700] {task_command.py:467} INFO - Running <TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [running]> on host macbook-pro-khxng-krissanapong.local
+[2024-10-21T20:32:30.572+0700] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='punza15@hotmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='bash_example' AIRFLOW_CTX_TASK_ID='test_task' AIRFLOW_CTX_EXECUTION_DATE='2024-10-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-20T00:00:00+00:00'
+[2024-10-21T20:32:30.574+0700] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-21T20:32:30.575+0700] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-21T20:32:30.576+0700] {logging_mixin.py:190} INFO - Current task name:test_task state:running start_date:2024-10-21 13:32:30.363956+00:00
+[2024-10-21T20:32:30.576+0700] {logging_mixin.py:190} INFO - Dag name:bash_example and current dag run status:running
+[2024-10-21T20:32:30.577+0700] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-21T20:32:30.583+0700] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/3z/w6kw66r93jxd4b5xvgpxfbkm0000gn/T
+[2024-10-21T20:32:30.584+0700] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "2024-10-20: Test task completed" >> ~/Documents/GitHub/NYC-Taxi-ETL-Pipeline/output/test.txt']
+[2024-10-21T20:32:30.593+0700] {subprocess.py:86} INFO - Output:
+[2024-10-21T20:32:30.601+0700] {subprocess.py:93} INFO - /bin/bash: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/output/test.txt: No such file or directory
+[2024-10-21T20:32:30.602+0700] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-10-21T20:32:30.611+0700] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-10-21T20:32:30.622+0700] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-10-21T20:32:30.622+0700] {logging_mixin.py:190} INFO - Task start:2024-10-21 13:32:30.363956+00:00 end:2024-10-21 13:32:30.621166+00:00 duration:0.25721
+[2024-10-21T20:32:30.623+0700] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): test_task> dag:<DAG: bash_example> dagrun:<DagRun bash_example @ 2024-10-20 00:00:00+00:00: manual__2024-10-20T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>
+[2024-10-21T20:32:30.624+0700] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2024-10-21T20:32:30.625+0700] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=bash_example, task_id=test_task, run_id=manual__2024-10-20T00:00:00+00:00, execution_date=20241020T000000, start_date=20241021T133230, end_date=20241021T133230
+[2024-10-21T20:32:30.652+0700] {logging_mixin.py:190} WARNING - /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py:155 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-10-21T20:32:30.653+0700] {email.py:272} INFO - Email alerting: attempt 1
+[2024-10-21T20:32:37.191+0700] {email.py:272} INFO - Email alerting: attempt 1
+[2024-10-21T20:32:43.688+0700] {taskinstance.py:1234} ERROR - Failed to send email to: ['punza15@hotmail.com']
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1442, in _email_alert
+    send_email(task.email, subject, html_content)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 155, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 282, in send_mime_email
+    smtp_conn.login(smtp_user, smtp_password)
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, basic authentication is disabled. [KU1PR03CA0031.apcprd03.prod.outlook.com 2024-10-21T13:32:37.332Z 08DCF125EFDD23D8]')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1232, in _handle_failure
+    task_instance.email_alert(error, failure_context["task"])
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3604, in email_alert
+    _email_alert(task_instance=self, exception=exception, task=task)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1444, in _email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 155, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 282, in send_mime_email
+    smtp_conn.login(smtp_user, smtp_password)
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, basic authentication is disabled. [KL1PR01CA0144.apcprd01.prod.exchangelabs.com 2024-10-21T13:32:43.828Z 08DCF1C1DE6F3060]')
+[2024-10-21T20:32:43.705+0700] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-21T20:32:43.706+0700] {standard_task_runner.py:124} ERROR - Failed to execute job 5 for task test_task (Bash command failed. The command returned a non-zero exit code 1.; 3675)
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-10-21T20:32:43.723+0700] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-10-21T20:32:43.756+0700] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-21T20:32:43.757+0700] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-10-21T20:34:12.751+0700] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-21T20:34:12.752+0700] {logging_mixin.py:190} INFO - Sending to executor.
+[2024-10-21T20:34:12.752+0700] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T20:34:12.753+0700] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T20:34:17.649+0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-21T20:34:17.664+0700] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2024-10-21T13:34:17.664127+00:00 and task will be retried at 2024-10-21T13:37:30.621166+00:00.
+[2024-10-21T20:34:17.665+0700] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2024-10-21T20:36:38.520+0700] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-21T20:36:38.521+0700] {logging_mixin.py:190} INFO - Sending to executor.
+[2024-10-21T20:36:38.521+0700] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T20:36:38.522+0700] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T20:36:42.410+0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-21T20:36:42.423+0700] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [up_for_retry]>, dependency 'Not In Retry Period' FAILED: Task is not ready for retry yet but will be retried automatically. Current date is 2024-10-21T13:36:42.423865+00:00 and task will be retried at 2024-10-21T13:37:30.621166+00:00.
+[2024-10-21T20:36:42.424+0700] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2024-10-21T20:37:47.992+0700] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-21T20:37:47.994+0700] {logging_mixin.py:190} INFO - Sending to executor.
+[2024-10-21T20:37:47.995+0700] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T20:37:47.996+0700] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T20:37:54.406+0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-21T20:37:54.430+0700] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [up_for_retry]>
+[2024-10-21T20:37:54.443+0700] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [up_for_retry]>
+[2024-10-21T20:37:54.444+0700] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-21T20:37:54.465+0700] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): test_task> on 2024-10-20 00:00:00+00:00
+[2024-10-21T20:37:54.474+0700] {standard_task_runner.py:72} INFO - Started process 4354 to run task
+[2024-10-21T20:37:54.489+0700] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--job-id', '9', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/var/folders/3z/w6kw66r93jxd4b5xvgpxfbkm0000gn/T/tmp2rklol1y']
+[2024-10-21T20:37:54.494+0700] {standard_task_runner.py:105} INFO - Job 9: Subtask test_task
+[2024-10-21T20:37:54.590+0700] {task_command.py:467} INFO - Running <TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [running]> on host macbook-pro-khxng-krissanapong.local
+[2024-10-21T20:37:54.724+0700] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='punza15@hotmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='bash_example' AIRFLOW_CTX_TASK_ID='test_task' AIRFLOW_CTX_EXECUTION_DATE='2024-10-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-20T00:00:00+00:00'
+[2024-10-21T20:37:54.727+0700] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-21T20:37:54.728+0700] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-21T20:37:54.729+0700] {logging_mixin.py:190} INFO - Current task name:test_task state:running start_date:2024-10-21 13:37:54.430727+00:00
+[2024-10-21T20:37:54.730+0700] {logging_mixin.py:190} INFO - Dag name:bash_example and current dag run status:running
+[2024-10-21T20:37:54.731+0700] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-21T20:37:54.733+0700] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/3z/w6kw66r93jxd4b5xvgpxfbkm0000gn/T
+[2024-10-21T20:37:54.735+0700] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "2024-10-20: Test task completed" >> ~/Documents/GitHub/NYC-Taxi-ETL-Pipeline/output/test.txt']
+[2024-10-21T20:37:54.750+0700] {subprocess.py:86} INFO - Output:
+[2024-10-21T20:37:54.762+0700] {subprocess.py:93} INFO - /bin/bash: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/output/test.txt: No such file or directory
+[2024-10-21T20:37:54.763+0700] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-10-21T20:37:54.778+0700] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-10-21T20:37:54.796+0700] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-10-21T20:37:54.797+0700] {logging_mixin.py:190} INFO - Task start:2024-10-21 13:37:54.430727+00:00 end:2024-10-21 13:37:54.795311+00:00 duration:0.364584
+[2024-10-21T20:37:54.798+0700] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): test_task> dag:<DAG: bash_example> dagrun:<DagRun bash_example @ 2024-10-20 00:00:00+00:00: manual__2024-10-20T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>
+[2024-10-21T20:37:54.799+0700] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2024-10-21T20:37:54.801+0700] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=bash_example, task_id=test_task, run_id=manual__2024-10-20T00:00:00+00:00, execution_date=20241020T000000, start_date=20241021T133754, end_date=20241021T133754
+[2024-10-21T20:37:54.842+0700] {logging_mixin.py:190} WARNING - /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py:155 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-10-21T20:37:54.843+0700] {email.py:272} INFO - Email alerting: attempt 1
+[2024-10-21T20:38:01.382+0700] {email.py:272} INFO - Email alerting: attempt 1
+[2024-10-21T20:38:07.918+0700] {taskinstance.py:1234} ERROR - Failed to send email to: ['punza15@hotmail.com']
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1442, in _email_alert
+    send_email(task.email, subject, html_content)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 155, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 282, in send_mime_email
+    smtp_conn.login(smtp_user, smtp_password)
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, basic authentication is disabled. [KL1PR01CA0106.apcprd01.prod.exchangelabs.com 2024-10-21T13:38:08.561Z 08DCF1764157533E]')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1232, in _handle_failure
+    task_instance.email_alert(error, failure_context["task"])
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3604, in email_alert
+    _email_alert(task_instance=self, exception=exception, task=task)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1444, in _email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 155, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 282, in send_mime_email
+    smtp_conn.login(smtp_user, smtp_password)
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, basic authentication is disabled. [KL1P15301CA0051.APCP153.PROD.OUTLOOK.COM 2024-10-21T13:38:08.053Z 08DCF19047EAC0A7]')
+[2024-10-21T20:38:07.937+0700] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-21T20:38:07.938+0700] {standard_task_runner.py:124} ERROR - Failed to execute job 9 for task test_task (Bash command failed. The command returned a non-zero exit code 1.; 4354)
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-10-21T20:38:07.970+0700] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-10-21T20:38:08.001+0700] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-21T20:38:08.002+0700] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-10-21T20:47:10.205+0700] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-21T20:47:10.206+0700] {logging_mixin.py:190} INFO - Sending to executor.
+[2024-10-21T20:47:10.207+0700] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T20:47:10.207+0700] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T20:47:14.729+0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-21T20:47:14.753+0700] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [up_for_retry]>
+[2024-10-21T20:47:14.766+0700] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [up_for_retry]>
+[2024-10-21T20:47:14.767+0700] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-21T20:47:14.795+0700] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): test_task> on 2024-10-20 00:00:00+00:00
+[2024-10-21T20:47:14.805+0700] {standard_task_runner.py:72} INFO - Started process 5207 to run task
+[2024-10-21T20:47:14.819+0700] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--job-id', '10', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/example_dag.py', '--cfg-path', '/var/folders/3z/w6kw66r93jxd4b5xvgpxfbkm0000gn/T/tmp1q6zs_k1']
+[2024-10-21T20:47:14.824+0700] {standard_task_runner.py:105} INFO - Job 10: Subtask test_task
+[2024-10-21T20:47:14.948+0700] {task_command.py:467} INFO - Running <TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [running]> on host macbook-pro-khxng-krissanapong.local
+[2024-10-21T20:47:15.086+0700] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='punza15@hotmail.com' AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='bash_example' AIRFLOW_CTX_TASK_ID='test_task' AIRFLOW_CTX_EXECUTION_DATE='2024-10-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-20T00:00:00+00:00'
+[2024-10-21T20:47:15.090+0700] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-21T20:47:15.092+0700] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-21T20:47:15.095+0700] {logging_mixin.py:190} INFO - Current task name:test_task state:running start_date:2024-10-21 13:47:14.754056+00:00
+[2024-10-21T20:47:15.097+0700] {logging_mixin.py:190} INFO - Dag name:bash_example and current dag run status:running
+[2024-10-21T20:47:15.099+0700] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-21T20:47:15.102+0700] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/3z/w6kw66r93jxd4b5xvgpxfbkm0000gn/T
+[2024-10-21T20:47:15.104+0700] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo "2024-10-20: Test task completed" >> $(pwd)/output/test.txt']
+[2024-10-21T20:47:15.126+0700] {subprocess.py:86} INFO - Output:
+[2024-10-21T20:47:15.147+0700] {subprocess.py:93} INFO - /bin/bash: /private/var/folders/3z/w6kw66r93jxd4b5xvgpxfbkm0000gn/T/airflowtmput94ymro/output/test.txt: No such file or directory
+[2024-10-21T20:47:15.149+0700] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-10-21T20:47:15.165+0700] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-10-21T20:47:15.183+0700] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-10-21T20:47:15.185+0700] {logging_mixin.py:190} INFO - Task start:2024-10-21 13:47:14.754056+00:00 end:2024-10-21 13:47:15.182355+00:00 duration:0.428299
+[2024-10-21T20:47:15.186+0700] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): test_task> dag:<DAG: bash_example> dagrun:<DagRun bash_example @ 2024-10-20 00:00:00+00:00: manual__2024-10-20T00:00:00+00:00, state:running, queued_at: None. externally triggered: False>
+[2024-10-21T20:47:15.188+0700] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2024-10-21T20:47:15.190+0700] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=bash_example, task_id=test_task, run_id=manual__2024-10-20T00:00:00+00:00, execution_date=20241020T000000, start_date=20241021T134714, end_date=20241021T134715
+[2024-10-21T20:47:15.252+0700] {logging_mixin.py:190} WARNING - /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py:155 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2024-10-21T20:47:15.253+0700] {email.py:272} INFO - Email alerting: attempt 1
+[2024-10-21T20:47:21.966+0700] {email.py:272} INFO - Email alerting: attempt 1
+[2024-10-21T20:47:28.515+0700] {taskinstance.py:1234} ERROR - Failed to send email to: ['punza15@hotmail.com']
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1442, in _email_alert
+    send_email(task.email, subject, html_content)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 155, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 282, in send_mime_email
+    smtp_conn.login(smtp_user, smtp_password)
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, basic authentication is disabled. [KU1PR03CA0024.apcprd03.prod.outlook.com 2024-10-21T13:47:22.105Z 08DCF0F6F682F31E]')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1232, in _handle_failure
+    task_instance.email_alert(error, failure_context["task"])
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3604, in email_alert
+    _email_alert(task_instance=self, exception=exception, task=task)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1444, in _email_alert
+    send_email(task.email, subject, html_content_err)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 80, in send_email
+    return backend(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 155, in send_email_smtp
+    send_mime_email(e_from=mail_from, e_to=recipients, mime_msg=msg, conn_id=conn_id, dryrun=dryrun)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/email.py", line 282, in send_mime_email
+    smtp_conn.login(smtp_user, smtp_password)
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 750, in login
+    raise last_exception
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/usr/local/Cellar/python@3.10/3.10.15/Frameworks/Python.framework/Versions/3.10/lib/python3.10/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.139 Authentication unsuccessful, basic authentication is disabled. [KL1PR01CA0147.apcprd01.prod.exchangelabs.com 2024-10-21T13:47:28.607Z 08DCF0FCFF4C149E]')
+[2024-10-21T20:47:28.531+0700] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-21T20:47:28.532+0700] {standard_task_runner.py:124} ERROR - Failed to execute job 10 for task test_task (Bash command failed. The command returned a non-zero exit code 1.; 5207)
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-10-21T20:47:28.576+0700] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-10-21T20:47:28.598+0700] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-21T20:47:28.599+0700] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-10-21T21:07:10.144+0700] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-21T21:07:10.146+0700] {logging_mixin.py:190} INFO - Sending to executor.
+[2024-10-21T21:07:10.147+0700] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T21:07:10.148+0700] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T21:07:14.659+0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-21T21:07:14.675+0700] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2024-10-21T21:07:14.676+0700] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2024-10-21T21:23:53.908+0700] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-21T21:23:53.910+0700] {logging_mixin.py:190} INFO - Sending to executor.
+[2024-10-21T21:23:53.911+0700] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T21:23:53.911+0700] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T21:23:58.232+0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-21T21:23:58.247+0700] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2024-10-21T21:23:58.248+0700] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2024-10-21T21:47:43.552+0700] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-21T21:47:43.553+0700] {logging_mixin.py:190} INFO - Sending to executor.
+[2024-10-21T21:47:43.554+0700] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T21:47:43.554+0700] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T21:47:47.292+0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-21T21:47:47.304+0700] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2024-10-21T21:47:47.305+0700] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2024-10-21T21:50:33.549+0700] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-21T21:50:33.551+0700] {logging_mixin.py:190} INFO - Sending to executor.
+[2024-10-21T21:50:33.551+0700] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T21:50:33.552+0700] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T21:50:37.629+0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-21T21:50:37.638+0700] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2024-10-21T21:50:37.645+0700] {local_task_job_runner.py:166} INFO - Task is not able to be run
+[2024-10-21T21:51:14.718+0700] {executor_loader.py:254} INFO - Loaded executor: SequentialExecutor
+[2024-10-21T21:51:14.719+0700] {logging_mixin.py:190} INFO - Sending to executor.
+[2024-10-21T21:51:14.720+0700] {base_executor.py:168} INFO - Adding to queue: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T21:51:14.720+0700] {sequential_executor.py:84} INFO - Executing command: ['airflow', 'tasks', 'run', 'bash_example', 'test_task', 'manual__2024-10-20T00:00:00+00:00', '--local', '--pool', 'default_pool', '--subdir', 'DAGS_FOLDER/example_dag.py']
+[2024-10-21T21:51:18.543+0700] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-21T21:51:18.550+0700] {taskinstance.py:2602} INFO - Dependencies not met for <TaskInstance: bash_example.test_task manual__2024-10-20T00:00:00+00:00 [success]>, dependency 'Task Instance State' FAILED: Task is in the 'success' state.
+[2024-10-21T21:51:18.557+0700] {local_task_job_runner.py:166} INFO - Task is not able to be run

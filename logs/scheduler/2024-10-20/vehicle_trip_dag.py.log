@@ -1,0 +1,224 @@
+[2024-10-20T20:41:28.271+0700] {processor.py:186} INFO - Started process (PID=22423) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:41:28.276+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T20:41:28.278+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:41:28.278+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:41:28.305+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:41:28.304+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T20:41:28.306+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:41:29.069+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.810 seconds
+[2024-10-20T20:45:59.951+0700] {processor.py:186} INFO - Started process (PID=23203) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:45:59.954+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T20:45:59.955+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:45:59.955+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:45:59.989+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:45:59.987+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T20:45:59.990+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:46:00.861+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.919 seconds
+[2024-10-20T20:49:16.063+0700] {processor.py:186} INFO - Started process (PID=23676) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:49:16.070+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T20:49:16.079+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:49:16.072+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:49:16.119+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:49:16.117+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T20:49:16.120+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:49:17.178+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 1.134 seconds
+[2024-10-20T20:52:30.223+0700] {processor.py:186} INFO - Started process (PID=24112) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:52:30.227+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T20:52:30.228+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:52:30.228+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:52:30.255+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:52:30.253+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T20:52:30.256+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:52:31.075+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.864 seconds
+[2024-10-20T20:55:57.095+0700] {processor.py:186} INFO - Started process (PID=24636) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:55:57.098+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T20:55:57.099+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:55:57.099+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:55:57.124+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:55:57.123+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T20:55:57.125+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:55:57.927+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.840 seconds
+[2024-10-20T20:59:18.778+0700] {processor.py:186} INFO - Started process (PID=25172) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:59:18.782+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T20:59:18.784+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:59:18.784+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:59:18.819+0700] {logging_mixin.py:190} INFO - [2024-10-20T20:59:18.817+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T20:59:18.819+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T20:59:19.691+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.923 seconds
+[2024-10-20T21:02:55.318+0700] {processor.py:186} INFO - Started process (PID=25731) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:02:55.321+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T21:02:55.322+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:02:55.322+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:02:55.351+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:02:55.349+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T21:02:55.351+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:02:56.240+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.932 seconds
+[2024-10-20T21:06:49.675+0700] {processor.py:186} INFO - Started process (PID=26339) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:06:49.678+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T21:06:49.679+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:06:49.679+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:06:49.704+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:06:49.702+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T21:06:49.705+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:06:50.538+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.872 seconds
+[2024-10-20T21:09:48.401+0700] {processor.py:186} INFO - Started process (PID=26696) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:09:48.405+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T21:09:48.406+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:09:48.406+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:09:48.444+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:09:48.442+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T21:09:48.445+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:09:49.251+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.861 seconds
+[2024-10-20T21:27:57.441+0700] {processor.py:186} INFO - Started process (PID=27195) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:27:57.444+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T21:27:57.445+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:27:57.445+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:27:57.471+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:27:57.469+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T21:27:57.471+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:27:58.636+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 1.204 seconds
+[2024-10-20T21:31:27.516+0700] {processor.py:186} INFO - Started process (PID=27825) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:31:27.520+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T21:31:27.522+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:31:27.521+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:31:27.572+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:31:27.570+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T21:31:27.573+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:31:28.960+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 1.451 seconds
+[2024-10-20T21:55:16.565+0700] {processor.py:186} INFO - Started process (PID=31023) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:55:16.568+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T21:55:16.569+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:55:16.569+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:55:16.593+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:55:16.592+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T21:55:16.594+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:55:17.396+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.836 seconds
+[2024-10-20T21:59:14.951+0700] {processor.py:186} INFO - Started process (PID=31611) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:59:14.954+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-20T21:59:14.956+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:59:14.955+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:59:14.999+0700] {logging_mixin.py:190} INFO - [2024-10-20T21:59:14.997+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-20T21:59:15.000+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-20T21:59:16.305+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 1.363 seconds
+[2024-10-21T00:00:31.491+0700] {processor.py:186} INFO - Started process (PID=32305) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-21T00:00:31.495+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-21T00:00:31.496+0700] {logging_mixin.py:190} INFO - [2024-10-21T00:00:31.496+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-21T00:00:31.540+0700] {logging_mixin.py:190} INFO - [2024-10-21T00:00:31.538+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-21T00:00:31.541+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-21T00:00:32.541+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 1.061 seconds
+[2024-10-21T02:18:24.576+0700] {processor.py:186} INFO - Started process (PID=33038) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-21T02:18:24.579+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-21T02:18:24.580+0700] {logging_mixin.py:190} INFO - [2024-10-21T02:18:24.580+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-21T02:18:24.613+0700] {logging_mixin.py:190} INFO - [2024-10-21T02:18:24.611+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-21T02:18:24.613+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-21T02:18:25.564+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.998 seconds
+[2024-10-21T04:20:41.141+0700] {processor.py:186} INFO - Started process (PID=33644) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-21T04:20:41.147+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-21T04:20:41.150+0700] {logging_mixin.py:190} INFO - [2024-10-21T04:20:41.148+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-21T04:20:41.204+0700] {logging_mixin.py:190} INFO - [2024-10-21T04:20:41.202+0700] {dagbag.py:387} ERROR - Failed to import: /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+Traceback (most recent call last):
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py", line 9, in <module>
+    from main import pipeline_1st, pipeline_2nd
+ModuleNotFoundError: No module named 'main'
+[2024-10-21T04:20:41.205+0700] {processor.py:927} WARNING - No viable dags retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-21T04:20:42.726+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 1.598 seconds
