@@ -14,3 +14,11 @@
 [2024-10-22T09:08:30.229+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:30.228+0700] {dag.py:4180} INFO - Setting next_dagrun for example_xcom_args to None, run_after=None
 [2024-10-22T09:08:30.233+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:30.232+0700] {dag.py:4180} INFO - Setting next_dagrun for example_xcom_args_with_operators to None, run_after=None
 [2024-10-22T09:08:30.257+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py took 0.334 seconds
+[2024-10-22T09:12:01.681+0700] {processor.py:186} INFO - Started process (PID=15018) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-10-22T09:12:01.685+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py for tasks to queue
+[2024-10-22T09:12:01.686+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:01.686+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-10-22T09:12:01.730+0700] {processor.py:925} INFO - DAG(s) 'example_xcom_args_with_operators', 'example_xcom_args' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py
+[2024-10-22T09:12:01.907+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:01.906+0700] {dag.py:3239} INFO - Sync 2 DAGs
+[2024-10-22T09:12:01.921+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:01.921+0700] {dag.py:4180} INFO - Setting next_dagrun for example_xcom_args to None, run_after=None
+[2024-10-22T09:12:01.925+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:01.924+0700] {dag.py:4180} INFO - Setting next_dagrun for example_xcom_args_with_operators to None, run_after=None
+[2024-10-22T09:12:01.945+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_xcomargs.py took 0.271 seconds
