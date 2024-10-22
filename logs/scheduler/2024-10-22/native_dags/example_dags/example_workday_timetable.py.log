@@ -12,3 +12,10 @@
 [2024-10-22T09:08:38.748+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:38.748+0700] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-22T09:08:38.831+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:38.831+0700] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-04 00:00:00+00:00, run_after=2021-01-05 00:00:00+00:00
 [2024-10-22T09:08:38.857+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 0.946 seconds
+[2024-10-22T09:12:08.802+0700] {processor.py:186} INFO - Started process (PID=15056) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-10-22T09:12:08.806+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py for tasks to queue
+[2024-10-22T09:12:08.807+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:08.807+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-10-22T09:12:09.632+0700] {processor.py:925} INFO - DAG(s) 'example_workday_timetable' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py
+[2024-10-22T09:12:09.829+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:09.828+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:12:09.916+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:09.916+0700] {dag.py:4180} INFO - Setting next_dagrun for example_workday_timetable to 2021-01-04 00:00:00+00:00, run_after=2021-01-05 00:00:00+00:00
+[2024-10-22T09:12:09.945+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_workday_timetable.py took 1.151 seconds
