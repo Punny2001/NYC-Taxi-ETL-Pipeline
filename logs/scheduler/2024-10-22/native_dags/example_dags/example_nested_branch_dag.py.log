@@ -12,3 +12,10 @@
 [2024-10-22T09:10:06.097+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:10:06.096+0700] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-22T09:10:06.141+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:10:06.140+0700] {dag.py:4180} INFO - Setting next_dagrun for example_nested_branch_dag to 2024-10-21 00:00:00+00:00, run_after=2024-10-22 00:00:00+00:00
 [2024-10-22T09:10:06.180+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.550 seconds
+[2024-10-22T09:13:26.960+0700] {processor.py:186} INFO - Started process (PID=15557) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-10-22T09:13:26.963+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py for tasks to queue
+[2024-10-22T09:13:26.964+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:13:26.964+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-10-22T09:13:27.014+0700] {processor.py:925} INFO - DAG(s) 'example_nested_branch_dag' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py
+[2024-10-22T09:13:27.200+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:13:27.200+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:13:27.225+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:13:27.225+0700] {dag.py:4180} INFO - Setting next_dagrun for example_nested_branch_dag to 2024-10-21 00:00:00+00:00, run_after=2024-10-22 00:00:00+00:00
+[2024-10-22T09:13:27.246+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_nested_branch_dag.py took 0.295 seconds
