@@ -5,3 +5,10 @@
 [2024-10-22T09:07:40.733+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:07:40.732+0700] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-22T09:07:40.764+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:07:40.764+0700] {dag.py:4180} INFO - Setting next_dagrun for vehicle_trip to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
 [2024-10-22T09:07:40.789+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.319 seconds
+[2024-10-22T09:11:21.672+0700] {processor.py:186} INFO - Started process (PID=14784) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-22T09:11:21.675+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py for tasks to queue
+[2024-10-22T09:11:21.677+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:11:21.676+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-22T09:11:21.711+0700] {processor.py:925} INFO - DAG(s) 'vehicle_trip' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py
+[2024-10-22T09:11:21.896+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:11:21.896+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:11:21.920+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:11:21.920+0700] {dag.py:4180} INFO - Setting next_dagrun for vehicle_trip to 2023-01-01 00:00:00+00:00, run_after=2023-01-02 00:00:00+00:00
+[2024-10-22T09:11:21.942+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/dags/vehicle_trip_dag.py took 0.279 seconds
