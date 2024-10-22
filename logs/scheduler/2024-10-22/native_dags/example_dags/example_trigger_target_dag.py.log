@@ -12,3 +12,10 @@
 [2024-10-22T09:08:42.071+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:42.070+0700] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-22T09:08:42.088+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:42.087+0700] {dag.py:4180} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
 [2024-10-22T09:08:42.112+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.315 seconds
+[2024-10-22T09:12:13.521+0700] {processor.py:186} INFO - Started process (PID=15098) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2024-10-22T09:12:13.525+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py for tasks to queue
+[2024-10-22T09:12:13.526+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:13.526+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2024-10-22T09:12:13.571+0700] {processor.py:925} INFO - DAG(s) 'example_trigger_target_dag' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py
+[2024-10-22T09:12:13.759+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:13.759+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:12:13.776+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:13.776+0700] {dag.py:4180} INFO - Setting next_dagrun for example_trigger_target_dag to None, run_after=None
+[2024-10-22T09:12:13.799+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_trigger_target_dag.py took 0.286 seconds
