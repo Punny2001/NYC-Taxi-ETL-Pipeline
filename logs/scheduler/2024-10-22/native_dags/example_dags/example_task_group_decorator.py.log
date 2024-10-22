@@ -12,3 +12,10 @@
 [2024-10-22T09:08:54.139+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:54.138+0700] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-22T09:08:54.160+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:08:54.160+0700] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
 [2024-10-22T09:08:54.183+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.322 seconds
+[2024-10-22T09:12:24.525+0700] {processor.py:186} INFO - Started process (PID=15172) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2024-10-22T09:12:24.528+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py for tasks to queue
+[2024-10-22T09:12:24.530+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:24.529+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2024-10-22T09:12:24.582+0700] {processor.py:925} INFO - DAG(s) 'example_task_group_decorator' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py
+[2024-10-22T09:12:24.770+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:24.769+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:12:24.784+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:12:24.784+0700] {dag.py:4180} INFO - Setting next_dagrun for example_task_group_decorator to None, run_after=None
+[2024-10-22T09:12:24.806+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_task_group_decorator.py took 0.291 seconds
