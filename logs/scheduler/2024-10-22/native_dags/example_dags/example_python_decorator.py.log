@@ -12,3 +12,10 @@
 [2024-10-22T09:09:46.243+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:09:46.242+0700] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-22T09:09:46.256+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:09:46.256+0700] {dag.py:4180} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
 [2024-10-22T09:09:46.280+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py took 0.416 seconds
+[2024-10-22T09:13:08.978+0700] {processor.py:186} INFO - Started process (PID=15429) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-10-22T09:13:08.982+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py for tasks to queue
+[2024-10-22T09:13:08.983+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:13:08.983+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-10-22T09:13:09.039+0700] {processor.py:925} INFO - DAG(s) 'example_python_decorator' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py
+[2024-10-22T09:13:09.434+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:13:09.433+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:13:09.449+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:13:09.448+0700] {dag.py:4180} INFO - Setting next_dagrun for example_python_decorator to None, run_after=None
+[2024-10-22T09:13:09.479+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_python_decorator.py took 0.510 seconds
