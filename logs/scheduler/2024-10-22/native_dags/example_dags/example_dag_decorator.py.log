@@ -1,0 +1,7 @@
+[2024-10-22T09:10:57.315+0700] {processor.py:186} INFO - Started process (PID=14741) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-10-22T09:10:57.319+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py for tasks to queue
+[2024-10-22T09:10:57.322+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:10:57.321+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-10-22T09:10:57.824+0700] {processor.py:925} INFO - DAG(s) 'example_dag_decorator' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py
+[2024-10-22T09:10:58.225+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:10:58.225+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:10:58.245+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:10:58.245+0700] {dag.py:4180} INFO - Setting next_dagrun for example_dag_decorator to None, run_after=None
+[2024-10-22T09:10:58.276+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_dag_decorator.py took 0.975 seconds
