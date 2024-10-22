@@ -5,3 +5,10 @@
 [2024-10-22T09:06:32.588+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:06:32.588+0700] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-22T09:06:32.602+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:06:32.602+0700] {dag.py:4180} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
 [2024-10-22T09:06:32.633+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.513 seconds
+[2024-10-22T09:09:53.263+0700] {processor.py:186} INFO - Started process (PID=14586) to work on /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2024-10-22T09:09:53.268+0700] {processor.py:914} INFO - Processing file /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2024-10-22T09:09:53.270+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:09:53.269+0700] {dagbag.py:588} INFO - Filling up the DagBag from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2024-10-22T09:09:53.317+0700] {processor.py:925} INFO - DAG(s) 'example_params_ui_tutorial' retrieved from /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2024-10-22T09:09:53.569+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:09:53.569+0700] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-22T09:09:53.587+0700] {logging_mixin.py:190} INFO - [2024-10-22T09:09:53.586+0700] {dag.py:4180} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2024-10-22T09:09:53.612+0700] {processor.py:208} INFO - Processing /Users/punny/Documents/GitHub/NYC-Taxi-ETL-Pipeline/.venv/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.358 seconds
